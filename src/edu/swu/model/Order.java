@@ -1,7 +1,5 @@
 package edu.swu.model;
 
-import java.util.Date;
-
 //订单类，记录了一个订单的详细信息
 
 public class Order {
@@ -10,10 +8,10 @@ public class Order {
 	private String prodId;
 	private String prodName;
 	private int prodAmount;
-	private Date indentTime;
-	private Date pickTime;
+	private String indentTime;
+	private String pickTime;
 	private String staffId;
-	private String meme = null;
+	private String memo = null;
 	
 	public Order(String id) {
 		super();
@@ -24,8 +22,8 @@ public class Order {
 		super();
 	}
 
-	public Order(String id, String clientId, String prodId, String prodName, int prodAmount, Date indentTime,
-			Date pickTime, String staffId, String meme) {
+	public Order(String id, String clientId, String prodId, String prodName, int prodAmount, String indentTime,
+			String pickTime, String staffId, String memo) {
 		super();
 		this.id = id;
 		this.clientId = clientId;
@@ -35,7 +33,7 @@ public class Order {
 		this.indentTime = indentTime;
 		this.pickTime = pickTime;
 		this.staffId = staffId;
-		this.meme = meme;
+		this.memo = memo;
 	}
 
 	public String getId() {
@@ -78,19 +76,19 @@ public class Order {
 		this.prodAmount = prodAmount;
 	}
 
-	public Date getIndentTime() {
+	public String getIndentTime() {
 		return indentTime;
 	}
 
-	public void setIndentTime(Date indentTime) {
+	public void setIndentTime(String indentTime) {
 		this.indentTime = indentTime;
 	}
 
-	public Date getPickTime() {
+	public String getPickTime() {
 		return pickTime;
 	}
 
-	public void setPickTime(Date pickTime) {
+	public void setPickTime(String pickTime) {
 		this.pickTime = pickTime;
 	}
 
@@ -102,14 +100,15 @@ public class Order {
 		this.staffId = staffId;
 	}
 
-	public String getMeme() {
-		return meme;
+	public String getMemo() {
+		return memo;
 	}
 
-	public void setMeme(String meme) {
-		this.meme = meme;
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
-	
+
+
 	
 	
 

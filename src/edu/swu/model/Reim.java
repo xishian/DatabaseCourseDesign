@@ -1,12 +1,10 @@
 package edu.swu.model;
 
-import java.sql.Date;
-
 public class Reim {
 	
 	private String id;
 	private String departId;
-	private Date reimTime; //报账时间
+	private String reimTime; //报账时间
 	private String amount;  //报账金额
 	private String staffId;
 	private String reason;
@@ -21,7 +19,7 @@ public class Reim {
 	public Reim() {
 		super();
 	}
-	public Reim(String id, String departId, Date reimTime, String amount, String staffId, String reason, String memo) {
+	public Reim(String id, String departId, String reimTime, String amount, String staffId, String reason, String memo) {
 		super();
 		this.id = id;
 		this.departId = departId;
@@ -43,10 +41,10 @@ public class Reim {
 	public void setDepartId(String departId) {
 		this.departId = departId;
 	}
-	public Date getReimTime() {
+	public String getReimTime() {
 		return reimTime;
 	}
-	public void setReimTime(Date reimTime) {
+	public void setReimTime(String reimTime) {
 		this.reimTime = reimTime;
 	}
 	public String getAmount() {

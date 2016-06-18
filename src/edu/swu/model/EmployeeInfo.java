@@ -1,7 +1,5 @@
 package edu.swu.model;
 
-import java.sql.Date;
-
 public class EmployeeInfo {
 	private String id; //staffId
 	private String departId;
@@ -12,7 +10,7 @@ public class EmployeeInfo {
 	private String degree; //学历
 	private String birthday;
 	private String status;
-	private Date comeTime;
+	private String comeTime;
 	private String state; //现在的状况
 	
 	private String beseSalary;  //基本工资
@@ -28,7 +26,7 @@ public class EmployeeInfo {
 		this.id = id;
 	}
 	public EmployeeInfo(String id, String departId, String name, String sex, int age, String duty, String degree,
-			String birthday, String status, Date comeTime, String state, String beseSalary, String bonus,
+			String birthday, String status, String comeTime, String state, String beseSalary, String bonus,
 			String withHold, String exactSalary, String memo) {
 		super();
 		this.id = id;
@@ -102,10 +100,10 @@ public class EmployeeInfo {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Date getComeTime() {
+	public String getComeTime() {
 		return comeTime;
 	}
-	public void setComeTime(Date comeTime) {
+	public void setComeTime(String comeTime) {
 		this.comeTime = comeTime;
 	}
 	public String getState() {

@@ -1,7 +1,5 @@
 package edu.swu.model;
 
-import java.util.Date;
-
 //销售收入表
 
 public class SalesAmount {
@@ -11,7 +9,7 @@ public class SalesAmount {
 	private String unitPrice;
 	private String prodAmount;
 	private String prodToprice;
-	private Date sellTime;
+	private String sellTime;
 	private String staffId;
 	private String memo;
 	
@@ -23,7 +21,7 @@ public class SalesAmount {
 		this.id = id;
 	}
 	public SalesAmount(String id, String clientId, String prodName, String unitPrice, String prodAmount,
-			String prodToprice, Date sellTime, String staffId, String memo) {
+			String prodToprice, String sellTime, String staffId, String memo) {
 		super();
 		this.id = id;
 		this.clientId = clientId;
@@ -71,10 +69,10 @@ public class SalesAmount {
 	public void setProdToprice(String prodToprice) {
 		this.prodToprice = prodToprice;
 	}
-	public Date getSellTime() {
+	public String getSellTime() {
 		return sellTime;
 	}
-	public void setSellTime(Date sellTime) {
+	public void setSellTime(String sellTime) {
 		this.sellTime = sellTime;
 	}
 	public String getStaffId() {
